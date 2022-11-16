@@ -48,7 +48,7 @@ public class PageEventService {
             return input.toString();
         };
     }
-    //@Bean
+    // @Bean
     /*KStream avec la clé de type string et la valeur de type PageEvent*/
     public Function<KStream<String, PageEvent>, KStream<String, Long>> KStreamFunction(){
         return (input)->{
